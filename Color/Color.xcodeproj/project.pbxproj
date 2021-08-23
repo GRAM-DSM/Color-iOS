@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,12 @@
 		EF2E679526CB6C7C00E9BF42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2E679326CB6C7C00E9BF42 /* Main.storyboard */; };
 		EF2E679726CB6C7F00E9BF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2E679626CB6C7F00E9BF42 /* Assets.xcassets */; };
 		EF2E679A26CB6C7F00E9BF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2E679826CB6C7F00E9BF42 /* LaunchScreen.storyboard */; };
+		EF90DC2026D38B96000D46FA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90DC1F26D38B96000D46FA /* Model.swift */; };
+		EF90DC2226D38B9C000D46FA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90DC2126D38B9C000D46FA /* View.swift */; };
+		EF90DC2426D38BA4000D46FA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90DC2326D38BA4000D46FA /* ViewModel.swift */; };
+		EF90DC2626D38BBA000D46FA /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90DC2526D38BBA000D46FA /* Networking.swift */; };
+		EF90DC2826D391BF000D46FA /* NanumGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF90DC2726D391BC000D46FA /* NanumGothic.otf */; };
+		EF90DC2B26D39213000D46FA /* NotoSerifKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF90DC2A26D39213000D46FA /* NotoSerifKR-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		EF2E679626CB6C7F00E9BF42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF2E679926CB6C7F00E9BF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF2E679B26CB6C7F00E9BF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF90DC1F26D38B96000D46FA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EF90DC2126D38B9C000D46FA /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		EF90DC2326D38BA4000D46FA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EF90DC2526D38BBA000D46FA /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		EF90DC2726D391BC000D46FA /* NanumGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.otf; sourceTree = "<group>"; };
+		EF90DC2A26D39213000D46FA /* NotoSerifKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSerifKR-Regular.otf"; path = "../../../../../../Downloads/Noto_Serif_KR/NotoSerifKR-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +60,6 @@
 				88A5EBCAF89C1EED5EE42FEE /* Pods-Color.debug.xcconfig */,
 				476DB16745F62CDCE228F1A4 /* Pods-Color.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +92,69 @@
 		EF2E678C26CB6C7C00E9BF42 /* Color */ = {
 			isa = PBXGroup;
 			children = (
+				EF90DC1E26D38B62000D46FA /* UI */,
+				EF90DC1D26D38B5C000D46FA /* Model */,
+				EF90DC1C26D38B57000D46FA /* View */,
+				EF90DC1B26D38B4E000D46FA /* ViewModel */,
+				EF90DC1A26D38B46000D46FA /* Networking */,
 				EF2E678D26CB6C7C00E9BF42 /* AppDelegate.swift */,
 				EF2E678F26CB6C7C00E9BF42 /* SceneDelegate.swift */,
 				EF2E679126CB6C7C00E9BF42 /* ViewController.swift */,
-				EF2E679326CB6C7C00E9BF42 /* Main.storyboard */,
 				EF2E679626CB6C7F00E9BF42 /* Assets.xcassets */,
 				EF2E679826CB6C7F00E9BF42 /* LaunchScreen.storyboard */,
 				EF2E679B26CB6C7F00E9BF42 /* Info.plist */,
+				EF90DC2926D391C3000D46FA /* Fonts */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		EF90DC1A26D38B46000D46FA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EF90DC2526D38BBA000D46FA /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EF90DC1B26D38B4E000D46FA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF90DC2326D38BA4000D46FA /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EF90DC1C26D38B57000D46FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF90DC2126D38B9C000D46FA /* View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF90DC1D26D38B5C000D46FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF90DC1F26D38B96000D46FA /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF90DC1E26D38B62000D46FA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E679326CB6C7C00E9BF42 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EF90DC2926D391C3000D46FA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EF90DC2726D391BC000D46FA /* NanumGothic.otf */,
+				EF90DC2A26D39213000D46FA /* NotoSerifKR-Regular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +218,9 @@
 			files = (
 				EF2E679A26CB6C7F00E9BF42 /* LaunchScreen.storyboard in Resources */,
 				EF2E679726CB6C7F00E9BF42 /* Assets.xcassets in Resources */,
+				EF90DC2B26D39213000D46FA /* NotoSerifKR-Regular.otf in Resources */,
 				EF2E679526CB6C7C00E9BF42 /* Main.storyboard in Resources */,
+				EF90DC2826D391BF000D46FA /* NanumGothic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +275,11 @@
 			files = (
 				EF2E679226CB6C7C00E9BF42 /* ViewController.swift in Sources */,
 				EF2E678E26CB6C7C00E9BF42 /* AppDelegate.swift in Sources */,
+				EF90DC2226D38B9C000D46FA /* View.swift in Sources */,
 				EF2E679026CB6C7C00E9BF42 /* SceneDelegate.swift in Sources */,
+				EF90DC2426D38BA4000D46FA /* ViewModel.swift in Sources */,
+				EF90DC2026D38B96000D46FA /* Model.swift in Sources */,
+				EF90DC2626D38BBA000D46FA /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
