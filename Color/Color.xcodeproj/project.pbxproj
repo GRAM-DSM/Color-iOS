@@ -20,6 +20,8 @@
 		EF90DC2626D38BBA000D46FA /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90DC2526D38BBA000D46FA /* Networking.swift */; };
 		EF90DC2826D391BF000D46FA /* NanumGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF90DC2726D391BC000D46FA /* NanumGothic.otf */; };
 		EF90DC2B26D39213000D46FA /* NotoSerifKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF90DC2A26D39213000D46FA /* NotoSerifKR-Regular.otf */; };
+		EFACEA6026E0A15200F946DD /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFACEA5F26E0A15200F946DD /* Introduction.storyboard */; };
+		EFC03BD326E090A500D1971F /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC03BD226E090A500D1971F /* Auth.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		EF90DC2526D38BBA000D46FA /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		EF90DC2726D391BC000D46FA /* NanumGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.otf; sourceTree = "<group>"; };
 		EF90DC2A26D39213000D46FA /* NotoSerifKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSerifKR-Regular.otf"; path = "../../../../../../Downloads/Noto_Serif_KR/NotoSerifKR-Regular.otf"; sourceTree = "<group>"; };
+		EFACEA5F26E0A15200F946DD /* Introduction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
+		EFC03BD226E090A500D1971F /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				EF2E679326CB6C7C00E9BF42 /* Main.storyboard */,
+				EFACEA5F26E0A15200F946DD /* Introduction.storyboard */,
+				EFC03BD226E090A500D1971F /* Auth.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -216,8 +222,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC03BD326E090A500D1971F /* Auth.storyboard in Resources */,
 				EF2E679A26CB6C7F00E9BF42 /* LaunchScreen.storyboard in Resources */,
 				EF2E679726CB6C7F00E9BF42 /* Assets.xcassets in Resources */,
+				EFACEA6026E0A15200F946DD /* Introduction.storyboard in Resources */,
 				EF90DC2B26D39213000D46FA /* NotoSerifKR-Regular.otf in Resources */,
 				EF2E679526CB6C7C00E9BF42 /* Main.storyboard in Resources */,
 				EF90DC2826D391BF000D46FA /* NanumGothic.otf in Resources */,
