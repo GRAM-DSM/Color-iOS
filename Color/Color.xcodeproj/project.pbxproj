@@ -19,8 +19,11 @@
 		EF90DC2426D38BA4000D46FA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90DC2326D38BA4000D46FA /* ViewModel.swift */; };
 		EF90DC2626D38BBA000D46FA /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90DC2526D38BBA000D46FA /* Networking.swift */; };
 		EF90DC2826D391BF000D46FA /* NanumGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF90DC2726D391BC000D46FA /* NanumGothic.otf */; };
-		EF90DC2B26D39213000D46FA /* NotoSerifKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF90DC2A26D39213000D46FA /* NotoSerifKR-Regular.otf */; };
 		EFACEA6026E0A15200F946DD /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFACEA5F26E0A15200F946DD /* Introduction.storyboard */; };
+		EFACEA6226E0E45000F946DD /* Writing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFACEA6126E0E45000F946DD /* Writing.storyboard */; };
+		EFACEA6526E0E57800F946DD /* WritingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFACEA6426E0E57800F946DD /* WritingPageViewController.swift */; };
+		EFACEA6826E0E66F00F946DD /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFACEA6726E0E66F00F946DD /* UIViewControllerExtension.swift */; };
+		EFACEA6C26E2121B00F946DD /* NotoSerifKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFACEA6B26E2121B00F946DD /* NotoSerifKR-Regular.otf */; };
 		EFC03BD326E090A500D1971F /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC03BD226E090A500D1971F /* Auth.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -41,8 +44,11 @@
 		EF90DC2326D38BA4000D46FA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		EF90DC2526D38BBA000D46FA /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		EF90DC2726D391BC000D46FA /* NanumGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.otf; sourceTree = "<group>"; };
-		EF90DC2A26D39213000D46FA /* NotoSerifKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSerifKR-Regular.otf"; path = "../../../../../../Downloads/Noto_Serif_KR/NotoSerifKR-Regular.otf"; sourceTree = "<group>"; };
 		EFACEA5F26E0A15200F946DD /* Introduction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
+		EFACEA6126E0E45000F946DD /* Writing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Writing.storyboard; sourceTree = "<group>"; };
+		EFACEA6426E0E57800F946DD /* WritingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingPageViewController.swift; sourceTree = "<group>"; };
+		EFACEA6726E0E66F00F946DD /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		EFACEA6B26E2121B00F946DD /* NotoSerifKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerifKR-Regular.otf"; sourceTree = "<group>"; };
 		EFC03BD226E090A500D1971F /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,9 +107,10 @@
 				EF90DC1C26D38B57000D46FA /* View */,
 				EF90DC1B26D38B4E000D46FA /* ViewModel */,
 				EF90DC1A26D38B46000D46FA /* Networking */,
+				EFACEA6326E0E55700F946DD /* VC */,
+				EFACEA6626E0E64A00F946DD /* Extensions */,
 				EF2E678D26CB6C7C00E9BF42 /* AppDelegate.swift */,
 				EF2E678F26CB6C7C00E9BF42 /* SceneDelegate.swift */,
-				EF2E679126CB6C7C00E9BF42 /* ViewController.swift */,
 				EF2E679626CB6C7F00E9BF42 /* Assets.xcassets */,
 				EF2E679826CB6C7F00E9BF42 /* LaunchScreen.storyboard */,
 				EF2E679B26CB6C7F00E9BF42 /* Info.plist */,
@@ -150,6 +157,7 @@
 				EF2E679326CB6C7C00E9BF42 /* Main.storyboard */,
 				EFACEA5F26E0A15200F946DD /* Introduction.storyboard */,
 				EFC03BD226E090A500D1971F /* Auth.storyboard */,
+				EFACEA6126E0E45000F946DD /* Writing.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -158,9 +166,26 @@
 			isa = PBXGroup;
 			children = (
 				EF90DC2726D391BC000D46FA /* NanumGothic.otf */,
-				EF90DC2A26D39213000D46FA /* NotoSerifKR-Regular.otf */,
+				EFACEA6B26E2121B00F946DD /* NotoSerifKR-Regular.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EFACEA6326E0E55700F946DD /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E679126CB6C7C00E9BF42 /* ViewController.swift */,
+				EFACEA6426E0E57800F946DD /* WritingPageViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EFACEA6626E0E64A00F946DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFACEA6726E0E66F00F946DD /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,8 +250,9 @@
 				EFC03BD326E090A500D1971F /* Auth.storyboard in Resources */,
 				EF2E679A26CB6C7F00E9BF42 /* LaunchScreen.storyboard in Resources */,
 				EF2E679726CB6C7F00E9BF42 /* Assets.xcassets in Resources */,
+				EFACEA6C26E2121B00F946DD /* NotoSerifKR-Regular.otf in Resources */,
 				EFACEA6026E0A15200F946DD /* Introduction.storyboard in Resources */,
-				EF90DC2B26D39213000D46FA /* NotoSerifKR-Regular.otf in Resources */,
+				EFACEA6226E0E45000F946DD /* Writing.storyboard in Resources */,
 				EF2E679526CB6C7C00E9BF42 /* Main.storyboard in Resources */,
 				EF90DC2826D391BF000D46FA /* NanumGothic.otf in Resources */,
 			);
@@ -283,6 +309,8 @@
 			files = (
 				EF2E679226CB6C7C00E9BF42 /* ViewController.swift in Sources */,
 				EF2E678E26CB6C7C00E9BF42 /* AppDelegate.swift in Sources */,
+				EFACEA6826E0E66F00F946DD /* UIViewControllerExtension.swift in Sources */,
+				EFACEA6526E0E57800F946DD /* WritingPageViewController.swift in Sources */,
 				EF90DC2226D38B9C000D46FA /* View.swift in Sources */,
 				EF2E679026CB6C7C00E9BF42 /* SceneDelegate.swift in Sources */,
 				EF90DC2426D38BA4000D46FA /* ViewModel.swift in Sources */,
