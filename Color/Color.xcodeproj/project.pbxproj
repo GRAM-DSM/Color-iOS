@@ -13,6 +13,9 @@
 		54185A7B26FC86610016AFAD /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54185A7A26FC86610016AFAD /* Timeline.storyboard */; };
 		54185A8126FC894A0016AFAD /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54185A8026FC894A0016AFAD /* TimelineTableViewCell.swift */; };
 		54185A8426FC91B20016AFAD /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54185A8326FC91B20016AFAD /* TimelineViewController.swift */; };
+		5428EBA8270AD24E000A3CBC /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5428EBA7270AD24E000A3CBC /* MyPage.storyboard */; };
+		5428EBAA270AD3EF000A3CBC /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5428EBA9270AD3EF000A3CBC /* Roboto-Bold.ttf */; };
+		5428EBAC270AD634000A3CBC /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428EBAB270AD634000A3CBC /* MyPageViewController.swift */; };
 		549E4860270843D3008C539A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549E485F270843D3008C539A /* CommentViewController.swift */; };
 		EC255B8FDE1104C800242B9C /* Pods_Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A468B2CD2FA9F3F4AEC849A /* Pods_Color.framework */; };
 		EF2E678E26CB6C7C00E9BF42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E678D26CB6C7C00E9BF42 /* AppDelegate.swift */; };
@@ -39,6 +42,9 @@
 		54185A7A26FC86610016AFAD /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
 		54185A8026FC894A0016AFAD /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		54185A8326FC91B20016AFAD /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		5428EBA7270AD24E000A3CBC /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		5428EBA9270AD3EF000A3CBC /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		5428EBAB270AD634000A3CBC /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		549E485F270843D3008C539A /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		88A5EBCAF89C1EED5EE42FEE /* Pods-Color.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Color.debug.xcconfig"; path = "Target Support Files/Pods-Color/Pods-Color.debug.xcconfig"; sourceTree = "<group>"; };
 		EF2E678A26CB6C7C00E9BF42 /* Color.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Color.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +89,7 @@
 			children = (
 				54185A8326FC91B20016AFAD /* TimelineViewController.swift */,
 				549E485F270843D3008C539A /* CommentViewController.swift */,
+				5428EBAB270AD634000A3CBC /* MyPageViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -183,6 +190,7 @@
 				EFACEA5F26E0A15200F946DD /* Introduction.storyboard */,
 				EFC03BD226E090A500D1971F /* Auth.storyboard */,
 				54185A7A26FC86610016AFAD /* Timeline.storyboard */,
+				5428EBA7270AD24E000A3CBC /* MyPage.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 			children = (
 				541616C427007A1C00860051 /* Roboto-Light.ttf */,
 				541616C327007A1B00860051 /* Roboto-Medium.ttf */,
+				5428EBA9270AD3EF000A3CBC /* Roboto-Bold.ttf */,
 				EF90DC2726D391BC000D46FA /* NanumGothic.otf */,
 			);
 			path = Fonts;
@@ -258,8 +267,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				541616C527007A1C00860051 /* Roboto-Medium.ttf in Resources */,
+				5428EBA8270AD24E000A3CBC /* MyPage.storyboard in Resources */,
 				EFC03BD326E090A500D1971F /* Auth.storyboard in Resources */,
 				54185A7B26FC86610016AFAD /* Timeline.storyboard in Resources */,
+				5428EBAA270AD3EF000A3CBC /* Roboto-Bold.ttf in Resources */,
 				EF2E679A26CB6C7F00E9BF42 /* LaunchScreen.storyboard in Resources */,
 				EF2E679726CB6C7F00E9BF42 /* Assets.xcassets in Resources */,
 				EFACEA6026E0A15200F946DD /* Introduction.storyboard in Resources */,
@@ -325,6 +336,7 @@
 				EF90DC2226D38B9C000D46FA /* View.swift in Sources */,
 				EF2E679026CB6C7C00E9BF42 /* SceneDelegate.swift in Sources */,
 				54185A8426FC91B20016AFAD /* TimelineViewController.swift in Sources */,
+				5428EBAC270AD634000A3CBC /* MyPageViewController.swift in Sources */,
 				EF90DC2426D38BA4000D46FA /* ViewModel.swift in Sources */,
 				EF90DC2026D38B96000D46FA /* Model.swift in Sources */,
 				EF90DC2626D38BBA000D46FA /* Networking.swift in Sources */,
