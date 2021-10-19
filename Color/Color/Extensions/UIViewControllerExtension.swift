@@ -26,4 +26,8 @@ extension UIViewController {
         bar.layer.shadowPath = UIBezierPath(rect: CGRect(x: 0, y: 6, width: bar.bounds.width, height: 40)).cgPath
         bar.layer.shadowOffset = CGSize(width: 0, height: 0.1)
     }
+    
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
