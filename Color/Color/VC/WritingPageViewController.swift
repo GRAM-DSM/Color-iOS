@@ -7,10 +7,15 @@
 
 import UIKit
 import Hashtags
+import RxCocoa
+import RxSwift
+import Alamofire
 
 class WritingPageViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     
     var selectedColor = UIColor()
+    
+    let disposeBag = DisposeBag()
     
     @IBOutlet weak private var introLabel: UILabel!
     
@@ -35,40 +40,53 @@ class WritingPageViewController: UIViewController, UITextViewDelegate, UITextFie
         setNavigationBar()
         hashtagTxtField.delegate = self
         hashtagView.tagBackgroundColor = .systemGray4
-        placeholderSetting()
+        placeholder()
         introLabel.adjustsFontSizeToFitWidth = true
+        colorButtonTapped()
+        addHashTag()
     }
     
-    @IBAction private func redButton(_ sender: UIButton) {
-        colorButtonDefaultSetting(button: sender, color: "angry")
+    func colorButtonTapped() {
+        redButton.rx.tap
+            .bind(onNext: { [unowned self] in
+                colorButtonDefaultSetting(button: redButton, color: "angry")
+            }).disposed(by: disposeBag)
+        
+        yellowButton.rx.tap
+            .bind(onNext: { [unowned self] in
+                colorButtonDefaultSetting(button: yellowButton, color: "happy")
+            }).disposed(by: disposeBag)
+        
+        blueButton.rx.tap
+            .bind(onNext: { [unowned self] in
+                colorButtonDefaultSetting(button: blueButton, color: "sad")
+            }).disposed(by: disposeBag)
+        
+        grayButton.rx.tap
+            .bind(onNext: { [unowned self] in
+                colorButtonDefaultSetting(button: grayButton, color: "bored")
+            }).disposed(by: disposeBag)
+        
+        pinkButton.rx.tap
+            .bind(onNext: { [unowned self] in
+                colorButtonDefaultSetting(button: pinkButton, color: "love")
+            }).disposed(by: disposeBag)
+        
+        navyButton.rx.tap
+            .bind(onNext: { [unowned self] in
+                colorButtonDefaultSetting(button: navyButton, color: "shamed")
+            }).disposed(by: disposeBag)
     }
     
-    @IBAction private func yellowButton(_ sender: UIButton) {
-        colorButtonDefaultSetting(button: sender, color: "happy")
-    }
-    
-    @IBAction private func blueButton(_ sender: UIButton) {
-        colorButtonDefaultSetting(button: sender, color: "sad")
-    }
-    
-    @IBAction private func grayButton(_ sender: UIButton) {
-        colorButtonDefaultSetting(button: sender, color: "bored")
-    }
-    
-    @IBAction private func pinkButton(_ sender: UIButton) {
-        colorButtonDefaultSetting(button: sender, color: "love")
-    }
-    
-    @IBAction private func navyButton(_ sender: UIButton) {
-        colorButtonDefaultSetting(button: sender, color: "shamed")
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        let text = textField.text?.replacingOccurrences(of: " ", with: "_")
-        let tag = HashTag(word: text!, withHashSymbol: true, isRemovable: true)
-        hashtagView.addTag(tag: tag)
-        textField.text = " "
-        return true
+    func addHashTag() {
+        hashtagTxtField.rx.controlEvent([.editingDidEndOnExit])
+            .asObservable()
+            .subscribe(onNext: { [unowned self] in
+                let text = hashtagTxtField.text?.replacingOccurrences(of: " ", with: "_")
+                let tag = HashTag(word: text!, withHashSymbol: true, isRemovable: true)
+                hashtagView.addTag(tag: tag)
+                hashtagTxtField.text = " "
+            }).disposed(by: disposeBag)
     }
     
     func resetButtonSetting() {
@@ -79,26 +97,28 @@ class WritingPageViewController: UIViewController, UITextViewDelegate, UITextFie
         }
     }
     
-    private func placeholderSetting() {
+    func placeholder() {
         contentTxtView.delegate = self
         contentTxtView.text = "오늘 하루 당신의 이야기를 들려주세요"
         contentTxtView.textColor = UIColor.lightGray
-    }
-    
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        if textView.textColor == UIColor.lightGray{
-            textView.text = nil
-            textView.textColor = UIColor.black
-        }
-        enableButton()
-    }
-    
-    func textViewDidEndEditing(_ textView: UITextView) {
-        if textView.text.isEmpty {
-            textView.text = "오늘 하루 당신의 이야기를 들려주세요"
-            textView.textColor = UIColor.lightGray
-        }
-        enableButton()
+        
+        contentTxtView.rx.didBeginEditing
+            .subscribe(onNext: { [unowned self] _ in
+                if contentTxtView.textColor == UIColor.lightGray{
+                    contentTxtView.text = nil
+                    contentTxtView.textColor = UIColor.black
+                }
+                enableButton()
+            }).disposed(by: disposeBag)
+        
+        contentTxtView.rx.didEndEditing
+            .subscribe(onNext: { [unowned self] _ in
+                if contentTxtView.text.isEmpty {
+                    contentTxtView.text = "오늘 하루 당신의 이야기를 들려주세요"
+                    contentTxtView.textColor = UIColor.lightGray
+                }
+                enableButton()
+            }).disposed(by: disposeBag)
     }
     
     func enableButton() {

@@ -65,9 +65,6 @@
                                         <color key="value" name="angry"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="redButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="FUL-c5-IiV"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOw-Ak-DS9">
                                 <rect key="frame" x="227" y="117" width="26" height="26"/>
@@ -87,9 +84,6 @@
                                         <color key="value" name="happy"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="yellowButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Twp-jt-haO"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4Z-gw-nHw">
                                 <rect key="frame" x="260" y="117" width="26" height="26"/>
@@ -109,9 +103,6 @@
                                         <color key="value" name="sad"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="blueButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7du-O2-vBy"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ef-hW-w1N">
                                 <rect key="frame" x="293" y="117" width="26" height="26"/>
@@ -131,9 +122,6 @@
                                         <color key="value" name="bored"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="grayButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="F0E-OX-s9O"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANN-HM-HHS">
                                 <rect key="frame" x="326" y="117" width="26" height="26"/>
@@ -153,9 +141,6 @@
                                         <color key="value" name="love"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="pinkButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Gmq-nZ-1nd"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8Z-Gs-mFG">
                                 <rect key="frame" x="359" y="117" width="26" height="26"/>
@@ -175,9 +160,6 @@
                                         <color key="value" name="shamed"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="navyButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ujc-Dm-OyT"/>
-                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qDG-zh-Oa8">
                                 <rect key="frame" x="20" y="179" width="374" height="300"/>
