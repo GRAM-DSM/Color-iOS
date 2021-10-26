@@ -17,4 +17,5 @@ target 'Color' do
   pod 'Firebase/Core'
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
+  pod 'Moya/RxSwift', '~> 15.0'
 end
