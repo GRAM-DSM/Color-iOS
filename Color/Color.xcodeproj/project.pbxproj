@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541616C527007A1C00860051 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 541616C327007A1B00860051 /* Roboto-Medium.ttf */; };
+		541616C627007A1C00860051 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 541616C427007A1C00860051 /* Roboto-Light.ttf */; };
+		541616C82700882D00860051 /* HeartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541616C72700882D00860051 /* HeartButton.swift */; };
+		54185A7B26FC86610016AFAD /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54185A7A26FC86610016AFAD /* Timeline.storyboard */; };
+		54185A8126FC894A0016AFAD /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54185A8026FC894A0016AFAD /* TimelineTableViewCell.swift */; };
+		54185A8426FC91B20016AFAD /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54185A8326FC91B20016AFAD /* TimelineViewController.swift */; };
+		5428EBA8270AD24E000A3CBC /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5428EBA7270AD24E000A3CBC /* MyPage.storyboard */; };
+		5428EBAA270AD3EF000A3CBC /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5428EBA9270AD3EF000A3CBC /* Roboto-Bold.ttf */; };
+		5428EBAC270AD634000A3CBC /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428EBAB270AD634000A3CBC /* MyPageViewController.swift */; };
+		549E4860270843D3008C539A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549E485F270843D3008C539A /* CommentViewController.swift */; };
 		EC255B8FDE1104C800242B9C /* Pods_Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A468B2CD2FA9F3F4AEC849A /* Pods_Color.framework */; };
 		EF2E678E26CB6C7C00E9BF42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E678D26CB6C7C00E9BF42 /* AppDelegate.swift */; };
 		EF2E679026CB6C7C00E9BF42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E678F26CB6C7C00E9BF42 /* SceneDelegate.swift */; };
@@ -19,7 +29,6 @@
 		EF90DC2426D38BA4000D46FA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90DC2326D38BA4000D46FA /* ViewModel.swift */; };
 		EF90DC2626D38BBA000D46FA /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90DC2526D38BBA000D46FA /* Networking.swift */; };
 		EF90DC2826D391BF000D46FA /* NanumGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF90DC2726D391BC000D46FA /* NanumGothic.otf */; };
-		EF90DC2B26D39213000D46FA /* NotoSerifKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF90DC2A26D39213000D46FA /* NotoSerifKR-Regular.otf */; };
 		EFACEA6026E0A15200F946DD /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFACEA5F26E0A15200F946DD /* Introduction.storyboard */; };
 		EFC03BD326E090A500D1971F /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC03BD226E090A500D1971F /* Auth.storyboard */; };
 /* End PBXBuildFile section */
@@ -27,6 +36,16 @@
 /* Begin PBXFileReference section */
 		1A468B2CD2FA9F3F4AEC849A /* Pods_Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		476DB16745F62CDCE228F1A4 /* Pods-Color.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Color.release.xcconfig"; path = "Target Support Files/Pods-Color/Pods-Color.release.xcconfig"; sourceTree = "<group>"; };
+		541616C327007A1B00860051 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		541616C427007A1C00860051 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		541616C72700882D00860051 /* HeartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartButton.swift; sourceTree = "<group>"; };
+		54185A7A26FC86610016AFAD /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
+		54185A8026FC894A0016AFAD /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		54185A8326FC91B20016AFAD /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		5428EBA7270AD24E000A3CBC /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		5428EBA9270AD3EF000A3CBC /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		5428EBAB270AD634000A3CBC /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		549E485F270843D3008C539A /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		88A5EBCAF89C1EED5EE42FEE /* Pods-Color.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Color.debug.xcconfig"; path = "Target Support Files/Pods-Color/Pods-Color.debug.xcconfig"; sourceTree = "<group>"; };
 		EF2E678A26CB6C7C00E9BF42 /* Color.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Color.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2E678D26CB6C7C00E9BF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +60,6 @@
 		EF90DC2326D38BA4000D46FA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		EF90DC2526D38BBA000D46FA /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		EF90DC2726D391BC000D46FA /* NanumGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.otf; sourceTree = "<group>"; };
-		EF90DC2A26D39213000D46FA /* NotoSerifKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSerifKR-Regular.otf"; path = "../../../../../../Downloads/Noto_Serif_KR/NotoSerifKR-Regular.otf"; sourceTree = "<group>"; };
 		EFACEA5F26E0A15200F946DD /* Introduction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
 		EFC03BD226E090A500D1971F /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +76,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54185A7C26FC88990016AFAD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				54185A8026FC894A0016AFAD /* TimelineTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		54185A8226FC918D0016AFAD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				54185A8326FC91B20016AFAD /* TimelineViewController.swift */,
+				549E485F270843D3008C539A /* CommentViewController.swift */,
+				5428EBAB270AD634000A3CBC /* MyPageViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		6F7B174982201C2EECDF4A25 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +133,11 @@
 			isa = PBXGroup;
 			children = (
 				EF90DC1E26D38B62000D46FA /* UI */,
+				54185A7C26FC88990016AFAD /* Cell */,
 				EF90DC1D26D38B5C000D46FA /* Model */,
 				EF90DC1C26D38B57000D46FA /* View */,
 				EF90DC1B26D38B4E000D46FA /* ViewModel */,
+				54185A8226FC918D0016AFAD /* ViewController */,
 				EF90DC1A26D38B46000D46FA /* Networking */,
 				EF2E678D26CB6C7C00E9BF42 /* AppDelegate.swift */,
 				EF2E678F26CB6C7C00E9BF42 /* SceneDelegate.swift */,
@@ -132,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				EF90DC2126D38B9C000D46FA /* View.swift */,
+				541616C72700882D00860051 /* HeartButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +189,8 @@
 				EF2E679326CB6C7C00E9BF42 /* Main.storyboard */,
 				EFACEA5F26E0A15200F946DD /* Introduction.storyboard */,
 				EFC03BD226E090A500D1971F /* Auth.storyboard */,
+				54185A7A26FC86610016AFAD /* Timeline.storyboard */,
+				5428EBA7270AD24E000A3CBC /* MyPage.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -157,8 +198,10 @@
 		EF90DC2926D391C3000D46FA /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				541616C427007A1C00860051 /* Roboto-Light.ttf */,
+				541616C327007A1B00860051 /* Roboto-Medium.ttf */,
+				5428EBA9270AD3EF000A3CBC /* Roboto-Bold.ttf */,
 				EF90DC2726D391BC000D46FA /* NanumGothic.otf */,
-				EF90DC2A26D39213000D46FA /* NotoSerifKR-Regular.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -196,6 +239,7 @@
 				TargetAttributes = {
 					EF2E678926CB6C7C00E9BF42 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -222,13 +266,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				541616C527007A1C00860051 /* Roboto-Medium.ttf in Resources */,
+				5428EBA8270AD24E000A3CBC /* MyPage.storyboard in Resources */,
 				EFC03BD326E090A500D1971F /* Auth.storyboard in Resources */,
+				54185A7B26FC86610016AFAD /* Timeline.storyboard in Resources */,
+				5428EBAA270AD3EF000A3CBC /* Roboto-Bold.ttf in Resources */,
 				EF2E679A26CB6C7F00E9BF42 /* LaunchScreen.storyboard in Resources */,
 				EF2E679726CB6C7F00E9BF42 /* Assets.xcassets in Resources */,
 				EFACEA6026E0A15200F946DD /* Introduction.storyboard in Resources */,
-				EF90DC2B26D39213000D46FA /* NotoSerifKR-Regular.otf in Resources */,
 				EF2E679526CB6C7C00E9BF42 /* Main.storyboard in Resources */,
 				EF90DC2826D391BF000D46FA /* NanumGothic.otf in Resources */,
+				541616C627007A1C00860051 /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,13 +329,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				541616C82700882D00860051 /* HeartButton.swift in Sources */,
+				54185A8126FC894A0016AFAD /* TimelineTableViewCell.swift in Sources */,
 				EF2E679226CB6C7C00E9BF42 /* ViewController.swift in Sources */,
 				EF2E678E26CB6C7C00E9BF42 /* AppDelegate.swift in Sources */,
 				EF90DC2226D38B9C000D46FA /* View.swift in Sources */,
 				EF2E679026CB6C7C00E9BF42 /* SceneDelegate.swift in Sources */,
+				54185A8426FC91B20016AFAD /* TimelineViewController.swift in Sources */,
+				5428EBAC270AD634000A3CBC /* MyPageViewController.swift in Sources */,
 				EF90DC2426D38BA4000D46FA /* ViewModel.swift in Sources */,
 				EF90DC2026D38B96000D46FA /* Model.swift in Sources */,
 				EF90DC2626D38BBA000D46FA /* Networking.swift in Sources */,
+				549E4860270843D3008C539A /* CommentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,14 +488,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FSLGTDRXYN;
 				INFOPLIST_FILE = Color/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = JSY.Color;
+				PRODUCT_BUNDLE_IDENTIFIER = color.jsy.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,13 +510,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FSLGTDRXYN;
 				INFOPLIST_FILE = Color/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = JSY.Color;
+				PRODUCT_BUNDLE_IDENTIFIER = color.jsy.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
