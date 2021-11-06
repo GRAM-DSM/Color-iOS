@@ -8,25 +8,33 @@
 import UIKit
 import Hashtags
 
+protocol TableViewCellDelegate: AnyObject {
+    func updateTextViewHeight(_ cell: TimelineTableViewCell, _ textView: UITextView)
+}
+
 class TimelineTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var detailTextView: UITextView!
     @IBOutlet weak var heartLabel: UILabel!
     
-    @IBOutlet weak var hashtagView: HashtagView!
+//    @IBOutlet weak var hashtagView: HashtagView!
     
-    let sampleTag1 = HashTag(word: "금수저")
-    let sampleTag2 = HashTag(word: "Flex")
-    let sampleTag3 = HashTag(word: "루저")
+    weak var delegate: TableViewCellDelegate?
+    
+//    let sampleTag1 = HashTag(word: "금수저")
+//    let sampleTag2 = HashTag(word: "Flex")
+//    let sampleTag3 = HashTag(word: "루저")
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        setTableView()
         heartButton()
-        hashtagView.addTag(tag: sampleTag1)
-        hashtagView.addTag(tag: sampleTag2)
-        hashtagView.addTag(tag: sampleTag3)
+        
+//        hashtagView.addTag(tag: sampleTag1)
+//        hashtagView.addTag(tag: sampleTag2)
+//        hashtagView.addTag(tag: sampleTag3)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -48,4 +56,18 @@ class TimelineTableViewCell: UITableViewCell {
         guard let button = sender as? HeartButton else { return }
         button.flipLikedState()
     }
+}
+
+extension TimelineTableViewCell: UITextViewDelegate {
+    private func setTableView() {
+        detailTextView.delegate = self
+        detailTextView.isScrollEnabled = false
+        detailTextView.sizeToFit()
+    }
+    
+//    func textViewDidChange(_ textView: UITextView) {
+//        if let delegate = delegate {
+//            delegate.updateTextViewHeight(self, textView)
+//        }
+//    }
 }
