@@ -8,6 +8,6 @@
 import Foundation
 
 struct Tokens: Codable {
-    let accessToken: String
-    let refreshToken: String
+    let access_token: String
+    let refresh_token: String
 }

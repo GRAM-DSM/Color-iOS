@@ -18,12 +18,12 @@ struct Token {
     }
     
     static func confirmAccessToken() -> Bool {
-        let value = confirmToken?.accessToken != nil ? true : false
+        let value = confirmToken?.access_token != nil ? true : false
         return value
     }
     
     static func confirmRefreshToken() -> Bool {
-        let value = confirmToken?.refreshToken != nil ? true : false
+        let value = confirmToken?.refresh_token != nil ? true : false
         return value
     }
     
