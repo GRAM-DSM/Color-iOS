@@ -42,43 +42,48 @@ enum ColorAPI {
 
 extension ColorAPI: TargetType {
     var baseURL: URL {
-        return URL(string: "http://")!
+        switch self {
+        case .like, .report, .myPage, .patchNickName:
+            return URL(string: "http://13.209.8.210:5000")!
+        default:
+            return URL(string: "http://211.38.86.92:8009")!
+        }
     }
     
     var path: String {
         switch self {
         case .login, .tokenRefresh:
-            return "211.38.86.92:8009/auth"
+            return "/auth"
         case .signUp:
-            return "211.38.86.92:8009/user"
+            return "/user"
         case .confirmNickName(let nickname):
-            return "211.38.86.92:8009/user/\(nickname)"
+            return "/user/\(nickname)"
         case .sendEmail:
-            return "211.38.86.92:8009/email"
+            return "/email"
         case .confirmEmail(let email, let code):
-            return "211.38.86.92:8009/email/\(email)/\(code)"
+            return "/email/\(email)/\(code)"
         case .createPost:
-            return "211.38.86.92:8009/post"
+            return "/post"
         case .deletePost(let post_id):
-            return "211.38.86.92:8009/post/\(post_id)"
+            return "/post/\(post_id)"
         case .patchPost(let post_id, _ , _ , _ ):
-            return "211.38.86.92:8009/post/\(post_id)"
+            return "/post/\(post_id)"
         case .postList(let page, let feel):
-            return "211.38.86.92:8009/post//?page=\(page)&feel=\(feel)"
+            return "/post//?page=\(page)&feel=\(feel)"
         case .getComment(let postId):
-            return "211.38.86.92:8009/comment/\(postId)"
+            return "/comment/\(postId)"
         case .createComment(let post_id, _ ):
-            return "211.38.86.92:8009/comment/\(post_id)"
+            return "/comment/\(post_id)"
         case .deleteComment(let comment_id, let post_id):
-            return "211.38.86.92:8009/comment/\(comment_id)/\(post_id)"
+            return "/comment/\(comment_id)/\(post_id)"
         case .like(let post_id):
-            return "13.209.8.210:5000/like/?post_id=\(post_id)"
+            return "/like/?post_id=\(post_id)"
         case .report(let id, let type, _ , _ ):
-            return "13.209.8.210:5000/report/?id=\(id)&type=\(type)"
+            return "/report/?id=\(id)&type=\(type)"
         case .myPage(let id, let feel, let filter, let page):
-            return "13.209.8.210:5000/profile/?id=\(id)&feel=\(feel)&filter=\(filter)&page=\(page)"
+            return "/profile/?id=\(id)&feel=\(feel)&filter=\(filter)&page=\(page)"
         case .patchNickName:
-            return "13.209.8.210:5000/profile"
+            return "/profile"
         }
     }
     
@@ -116,20 +121,23 @@ extension ColorAPI: TargetType {
         case .patchNickName(let nickname):
             return .requestParameters(parameters: ["nickname" : nickname], encoding: JSONEncoding.prettyPrinted)
         default:
-            break
-            
+            return .requestPlain
         }
     }
     
     var headers: [String : String]? {
         switch self {
         case .tokenRefresh:
-            guard let refreshToken = Token.confirmToken?.refreshToken else {return nil}
+            guard let refreshToken = Token.confirmToken?.refresh_token else {return nil}
             return ["Authorization" : "Bearer " + refreshToken ]
         default:
-            guard let accessToken = Token.confirmToken?.accessToken else {return nil}
+            guard let accessToken = Token.confirmToken?.access_token else {return nil}
             return ["Authorization" : "Bearer " + accessToken ]
         }
+    }
+    
+    var validationType: Moya.ValidationType {
+        return .successCodes
     }
     
     
