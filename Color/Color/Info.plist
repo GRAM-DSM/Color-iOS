@@ -31,6 +31,7 @@
 		<string>Roboto-Light.ttf</string>
 		<string>Roboto-Medium.ttf</string>
 		<string>NanumGothic.otf</string>
+		<string>NanumGothic-Bold.ttf</string>
 		<string>NotoSerifKR-Regular.otf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
