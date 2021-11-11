@@ -6,13 +6,14 @@
 //
 
 import UIKit
-import AlignedCollectionViewFlowLayout
+import Moya
+import RxCocoa
 
 class TimelineViewController: UIViewController {
     @IBOutlet weak var timelineTableView: UITableView!
     
-    private let sample1 = ["정현왕자님", "안병헌", "정현왕자님", "안병헌"]
-    private let sample2 = ["나는 강남에 빌딩있는데 이 인생 패배자들아 ㅗㅗ", "오우오우 지려버렸고", "나는 강남에 빌딩있는데 이 인생 패배자들아 ㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗ", "오우오우 지려버렸고"]
+    private let sample1 = ["정현왕자님", "안벙현", "정현왕자님", "안벙현"]
+    private let sample2 = ["나는 강남에 빌딩있는데 이 인생 패배자들아 ㅗㅗ", "오우오우 지려버렸고", "나는 강남에 빌딩있는데 이 인생 패배자들아 ㅗㅗ", "오우오우 지려버렸고"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,8 +51,11 @@ extension TimelineViewController: UITableViewDelegate, UITableViewDataSource, Ta
     
     func updateTextViewHeight(_ cell: TimelineTableViewCell, _ textView: UITextView) {
         let size = textView.bounds.size
-        let newSize = timelineTableView.sizeThatFits(CGSize(width: size.width,
-                                                    height: CGFloat.greatestFiniteMagnitude))
+        
+        let newSize = timelineTableView.sizeThatFits(CGSize(
+            width: size.width,
+            height: CGFloat.greatestFiniteMagnitude))
+        
         if size.height != newSize.height {
             UIView.setAnimationsEnabled(false)
             timelineTableView.beginUpdates()
@@ -59,8 +63,4 @@ extension TimelineViewController: UITableViewDelegate, UITableViewDataSource, Ta
             UIView.setAnimationsEnabled(true)
         }
     }
-    
-    //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    //        return 181
-    //    }
 }
