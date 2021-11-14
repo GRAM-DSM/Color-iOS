@@ -1,7 +1,11 @@
 {
   "images" : [
     {
+<<<<<<< Updated upstream:Color/Color/Assets.xcassets/Image/Intoduce_10.imageset/Contents.json
       "filename" : "1.png",
+=======
+      "filename" : "Group 240.png",
+>>>>>>> Stashed changes:Color/Color/Assets.xcassets/Image/IntroductionNextButton/7.imageset/Contents.json
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -11,7 +15,11 @@
       "scale" : "2x"
     },
     {
+<<<<<<< Updated upstream:Color/Color/Assets.xcassets/Image/Intoduce_10.imageset/Contents.json
       "filename" : "Rectangle 9.png",
+=======
+      "filename" : "3.png",
+>>>>>>> Stashed changes:Color/Color/Assets.xcassets/Image/IntroductionNextButton/7.imageset/Contents.json
       "idiom" : "universal",
       "scale" : "3x"
     }
