@@ -9,13 +9,15 @@ import UIKit
 import Hashtags
 import RxCocoa
 import RxSwift
-import Alamofire
+import Moya
 
 class WritingPageViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     
-    var selectedColor = UIColor()
-    
+    var currentFeel = String()
+    var hashTags = [String]()
     let disposeBag = DisposeBag()
+    
+    let provider = MoyaProvider<ColorAPI>()
     
     @IBOutlet weak private var introLabel: UILabel!
     
@@ -44,37 +46,44 @@ class WritingPageViewController: UIViewController, UITextViewDelegate, UITextFie
         introLabel.adjustsFontSizeToFitWidth = true
         colorButtonTapped()
         addHashTag()
+        writingPost()
     }
     
     func colorButtonTapped() {
         redButton.rx.tap
             .bind(onNext: { [unowned self] in
                 colorButtonDefaultSetting(button: redButton, color: "angry")
+                currentFeel = "ANGRY"
             }).disposed(by: disposeBag)
         
         yellowButton.rx.tap
             .bind(onNext: { [unowned self] in
                 colorButtonDefaultSetting(button: yellowButton, color: "happy")
+                currentFeel = "HAPPY"
             }).disposed(by: disposeBag)
         
         blueButton.rx.tap
             .bind(onNext: { [unowned self] in
                 colorButtonDefaultSetting(button: blueButton, color: "sad")
+                currentFeel = "SAD"
             }).disposed(by: disposeBag)
         
         grayButton.rx.tap
             .bind(onNext: { [unowned self] in
                 colorButtonDefaultSetting(button: grayButton, color: "bored")
+                currentFeel = "BORED"
             }).disposed(by: disposeBag)
         
         pinkButton.rx.tap
             .bind(onNext: { [unowned self] in
                 colorButtonDefaultSetting(button: pinkButton, color: "love")
+                currentFeel = "LOVE"
             }).disposed(by: disposeBag)
         
         navyButton.rx.tap
             .bind(onNext: { [unowned self] in
                 colorButtonDefaultSetting(button: navyButton, color: "shamed")
+                currentFeel = "SHAMED"
             }).disposed(by: disposeBag)
     }
     
@@ -85,6 +94,8 @@ class WritingPageViewController: UIViewController, UITextViewDelegate, UITextFie
                 let text = hashtagTxtField.text?.replacingOccurrences(of: " ", with: "_")
                 let tag = HashTag(word: text!, withHashSymbol: true, isRemovable: true)
                 hashtagView.addTag(tag: tag)
+                hashTags.append(text!)
+                print(hashTags)
                 hashtagTxtField.text = " "
             }).disposed(by: disposeBag)
     }
@@ -143,6 +154,23 @@ class WritingPageViewController: UIViewController, UITextViewDelegate, UITextFie
         hashtagView.tagBackgroundColor = UIColor.init(named: color)!
         button.chooseColor(buttonColor: UIColor.init(named: color)!)
         enableButton()
+    }
+    
+    func writingPost() {
+        doneButton.rx.tap
+            .subscribe(
+                onNext: { [unowned self] in
+                    provider.request(.createPost(contentTxtView.text!, currentFeel, hashTags)) { result in
+                        switch result {
+                        case .success( _ ):
+                            showAlert(title: "게시글 작성 완료", message: nil)
+                        case .failure(let error):
+                            showAlert(title: "게시글 작성에 실패하셨습니다.", message: error.failureReason)
+                            print(error.response?.statusCode)
+                        }
+                        
+                    }
+                }).disposed(by: disposeBag)
     }
     
 }
