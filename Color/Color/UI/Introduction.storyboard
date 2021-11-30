@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -30,20 +31,24 @@
                                 <rect key="frame" x="359" y="835" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="IntroductionButton"/>
+                                <connections>
+                                    <segue destination="gFp-x7-zGo" kind="show" id="yYI-Ec-FFq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="n3e-VD-4mu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="121.73913043478262" y="118.52678571428571"/>
+            <point key="canvasLocation" x="1031.8840579710145" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Angry View Controller-->
         <scene sceneID="aRR-nx-OV5">
             <objects>
-                <viewController id="gFp-x7-zGo" sceneMemberID="viewController">
+                <viewController id="gFp-x7-zGo" customClass="AngryViewController" customModule="Color" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Dh-Rx-A9d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,19 +98,41 @@
                                 <fontDescription key="fontDescription" name="NotoSerifKR-Regular" family="Noto Serif KR" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intoduce_1" translatesAutoresizingMaskIntoConstraints="NO" id="Xyo-X8-a2v">
+                                <rect key="frame" x="177" y="514" width="258" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OB7-d7-aV8">
+                                <rect key="frame" x="254" y="618" width="160" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="1">
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="mLw-6u-QER" kind="show" id="FLe-8v-Ldy"/>
+                                </connections>
+                            </button>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gKR-m8-Cxy"/>
                         <color key="backgroundColor" name="angry"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tpq-kp-XQj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEV-sr-cDJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="802.89855072463774" y="118.52678571428571"/>
+            <point key="canvasLocation" x="1713.0434782608697" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Happy View Controller-->
         <scene sceneID="2oA-eO-Tzv">
             <objects>
-                <viewController id="mLw-6u-QER" sceneMemberID="viewController">
+                <viewController id="mLw-6u-QER" customClass="HappyViewController" customModule="Color" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PKt-wf-eop">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,19 +182,56 @@
                                 <fontDescription key="fontDescription" name="NotoSerifKR-Regular" family="Noto Serif KR" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intoduce_3" translatesAutoresizingMaskIntoConstraints="NO" id="pyq-m5-fog">
+                                <rect key="frame" x="176" y="514" width="258" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intoduce_2" translatesAutoresizingMaskIntoConstraints="NO" id="mk6-lJ-Gcs">
+                                <rect key="frame" x="-1" y="514" width="258" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seg-fH-4gs">
+                                <rect key="frame" x="254" y="618" width="160" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="3">
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Kcb-kY-dke" kind="show" id="8va-hV-2nZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wN0-33-dO4">
+                                <rect key="frame" x="0.0" y="618" width="180" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="2">
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                            </button>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7b6-9f-Mkw"/>
                         <color key="backgroundColor" name="happy"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ql6-6a-P9v"/>
+                    <connections>
+                        <outlet property="backButton" destination="wN0-33-dO4" id="zCQ-qI-JkY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jm9-CJ-lQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1476.8115942028987" y="118.52678571428571"/>
+            <point key="canvasLocation" x="2386.9565217391305" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Sad View Controller-->
         <scene sceneID="LJo-bA-pkK">
             <objects>
-                <viewController id="Kcb-kY-dke" sceneMemberID="viewController">
+                <viewController id="Kcb-kY-dke" customClass="SadViewController" customModule="Color" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bid-dn-d9W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -217,19 +281,56 @@
                                 <fontDescription key="fontDescription" name="NotoSerifKR-Regular" family="Noto Serif KR" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intoduce_5" translatesAutoresizingMaskIntoConstraints="NO" id="MC4-9T-xRo">
+                                <rect key="frame" x="176" y="514" width="258" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intoduce_4" translatesAutoresizingMaskIntoConstraints="NO" id="dss-P3-k42">
+                                <rect key="frame" x="-1" y="514" width="258" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPE-6p-prE">
+                                <rect key="frame" x="254" y="618" width="160" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="5">
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="QLy-KG-hEg" kind="show" id="dO6-ev-3R9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z68-FC-RJS">
+                                <rect key="frame" x="0.0" y="618" width="180" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="4">
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                            </button>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eua-59-nzz"/>
                         <color key="backgroundColor" name="sad"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9CV-5E-4IY"/>
+                    <connections>
+                        <outlet property="backButton" destination="Z68-FC-RJS" id="Kkr-gs-ggC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ey3-CD-nn7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2165" y="119"/>
+            <point key="canvasLocation" x="3073.913043478261" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Shame View Controller-->
         <scene sceneID="Un5-Wb-G8L">
             <objects>
-                <viewController id="zPn-ra-XBE" sceneMemberID="viewController">
+                <viewController id="zPn-ra-XBE" customClass="ShameViewController" customModule="Color" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f5e-rL-gYn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,19 +380,41 @@
                                 <fontDescription key="fontDescription" name="NotoSerifKR-Regular" family="Noto Serif KR" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intoduce_10" translatesAutoresizingMaskIntoConstraints="NO" id="5xR-q0-7CX">
+                                <rect key="frame" x="-1" y="514" width="258" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mst-0t-qYc">
+                                <rect key="frame" x="0.0" y="618" width="180" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="10">
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                            </button>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nDq-T1-Slf"/>
                         <color key="backgroundColor" name="shamed"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dYb-LW-ge3"/>
+                    <connections>
+                        <outlet property="backButton" destination="Mst-0t-qYc" id="Jhx-FA-NqU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kav-J0-f5Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4186.9565217391309" y="118.52678571428571"/>
+            <point key="canvasLocation" x="5097.1014492753629" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Love View Controller-->
         <scene sceneID="g8L-gY-N6B">
             <objects>
-                <viewController id="byP-RE-scw" sceneMemberID="viewController">
+                <viewController id="byP-RE-scw" customClass="LoveViewController" customModule="Color" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e0f-dj-08m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -341,19 +464,56 @@
                                 <fontDescription key="fontDescription" name="NotoSerifKR-Regular" family="Noto Serif KR" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intoduce_9" translatesAutoresizingMaskIntoConstraints="NO" id="3LZ-aE-GTa">
+                                <rect key="frame" x="176" y="514" width="258" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intoduce_8" translatesAutoresizingMaskIntoConstraints="NO" id="Eap-DO-yHn">
+                                <rect key="frame" x="-1" y="514" width="258" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6P0-7H-wLS">
+                                <rect key="frame" x="254" y="618" width="160" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="9">
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="zPn-ra-XBE" kind="show" id="VbR-0v-I5d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emm-i2-9v9">
+                                <rect key="frame" x="0.0" y="618" width="180" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="8">
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                            </button>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jza-QB-F1C"/>
                         <color key="backgroundColor" name="love"/>
                     </view>
+                    <navigationItem key="navigationItem" id="mbp-MU-zKO"/>
+                    <connections>
+                        <outlet property="backButton" destination="emm-i2-9v9" id="NXd-eA-ij2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yB1-Y3-gr6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3528" y="119"/>
+            <point key="canvasLocation" x="4437.68115942029" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Bored View Controller-->
         <scene sceneID="tMX-DL-852">
             <objects>
-                <viewController id="QLy-KG-hEg" sceneMemberID="viewController">
+                <viewController id="QLy-KG-hEg" customClass="BoredViewController" customModule="Color" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fiy-2Q-NrO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -403,17 +563,97 @@
                                 <fontDescription key="fontDescription" name="NotoSerifKR-Regular" family="Noto Serif KR" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intoduce_7" translatesAutoresizingMaskIntoConstraints="NO" id="qdC-vM-cTg">
+                                <rect key="frame" x="176" y="514" width="258" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intoduce_6" translatesAutoresizingMaskIntoConstraints="NO" id="nC5-I7-95u">
+                                <rect key="frame" x="-1" y="514" width="258" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZi-ph-KEJ">
+                                <rect key="frame" x="254" y="618" width="160" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="7">
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="byP-RE-scw" kind="show" id="8mX-Kp-Pal"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzV-ZG-NSd">
+                                <rect key="frame" x="0.0" y="618" width="180" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="6">
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                            </button>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="H1Y-3d-Xv6"/>
                         <color key="backgroundColor" name="bored"/>
                     </view>
+                    <navigationItem key="navigationItem" id="EXc-Yg-lep"/>
+                    <connections>
+                        <outlet property="backButton" destination="zzV-ZG-NSd" id="tUq-aV-Lxd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0f-fg-JbO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2855" y="119"/>
+            <point key="canvasLocation" x="3763.7681159420295" y="118.52678571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ioM-QW-UrW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ckC-Nu-X3Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gUb-bQ-S33">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="fYJ-T8-6hU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TOu-sJ-Ptq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="118.52678571428571"/>
         </scene>
     </scenes>
     <resources>
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+        <image name="Intoduce_1" width="175" height="279"/>
+        <image name="Intoduce_10" width="195" height="241"/>
+        <image name="Intoduce_2" width="195" height="241"/>
+        <image name="Intoduce_3" width="175" height="279"/>
+        <image name="Intoduce_4" width="195" height="241"/>
+        <image name="Intoduce_5" width="175" height="279"/>
+        <image name="Intoduce_6" width="195" height="241"/>
+        <image name="Intoduce_7" width="175" height="279"/>
+        <image name="Intoduce_8" width="195" height="241"/>
+        <image name="Intoduce_9" width="175" height="279"/>
+=======
+        <image name="1" width="160.5" height="174.5"/>
+        <image name="10" width="180" height="189"/>
+        <image name="2" width="180" height="189"/>
+        <image name="3" width="160.5" height="174.5"/>
+        <image name="4" width="180" height="189"/>
+        <image name="5" width="160.5" height="174.5"/>
+        <image name="6" width="180" height="189"/>
+        <image name="7" width="160.5" height="174"/>
+        <image name="8" width="180" height="189"/>
+        <image name="9" width="160.5" height="174.5"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         <image name="IntroductionButton" width="25" height="25"/>
         <image name="IntroductionLogo" width="568" height="664"/>
         <image name="xmark" catalog="system" width="128" height="113"/>

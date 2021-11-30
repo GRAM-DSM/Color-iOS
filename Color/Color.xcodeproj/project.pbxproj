@@ -24,16 +24,32 @@
 		EF2E679526CB6C7C00E9BF42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2E679326CB6C7C00E9BF42 /* Main.storyboard */; };
 		EF2E679726CB6C7F00E9BF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2E679626CB6C7F00E9BF42 /* Assets.xcassets */; };
 		EF2E679A26CB6C7F00E9BF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2E679826CB6C7F00E9BF42 /* LaunchScreen.storyboard */; };
+		EF3372B4273146920093648A /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3372B3273146910093648A /* Token.swift */; };
+		EF3372B6273149050093648A /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3372B5273149050093648A /* KeyChain.swift */; };
+		EF664DD5271836B600DA8885 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF664DD4271836B600DA8885 /* UIButtonExtension.swift */; };
+		EF6C1431273A8BC100197D8B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6C1430273A8BC100197D8B /* UIColorExtension.swift */; };
+		EF6EFBA527281B2800280FAA /* AngryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6EFBA427281B2800280FAA /* AngryViewController.swift */; };
+		EF6EFBA727281B3400280FAA /* HappyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6EFBA627281B3400280FAA /* HappyViewController.swift */; };
+		EF6EFBA927281B3C00280FAA /* SadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6EFBA827281B3C00280FAA /* SadViewController.swift */; };
+		EF6EFBAB27281B5200280FAA /* BoredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6EFBAA27281B5200280FAA /* BoredViewController.swift */; };
+		EF6EFBAD27281B5A00280FAA /* LoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6EFBAC27281B5A00280FAA /* LoveViewController.swift */; };
+		EF6EFBAF27281B6100280FAA /* ShameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6EFBAE27281B6100280FAA /* ShameViewController.swift */; };
 		EF90DC2026D38B96000D46FA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90DC1F26D38B96000D46FA /* Model.swift */; };
 		EF90DC2226D38B9C000D46FA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90DC2126D38B9C000D46FA /* View.swift */; };
 		EF90DC2426D38BA4000D46FA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90DC2326D38BA4000D46FA /* ViewModel.swift */; };
 		EF90DC2626D38BBA000D46FA /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90DC2526D38BBA000D46FA /* Networking.swift */; };
 		EF90DC2826D391BF000D46FA /* NanumGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF90DC2726D391BC000D46FA /* NanumGothic.otf */; };
 		EFACEA6026E0A15200F946DD /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFACEA5F26E0A15200F946DD /* Introduction.storyboard */; };
+		EFAA2DB8272D0ED300913D85 /* ColorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA2DB7272D0ED300913D85 /* ColorAPI.swift */; };
+		EFACEA6026E0A15200F946DD /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFACEA5F26E0A15200F946DD /* Introduction.storyboard */; };
 		EFACEA6226E0E45000F946DD /* Writing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFACEA6126E0E45000F946DD /* Writing.storyboard */; };
 		EFACEA6526E0E57800F946DD /* WritingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFACEA6426E0E57800F946DD /* WritingPageViewController.swift */; };
 		EFACEA6826E0E66F00F946DD /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFACEA6726E0E66F00F946DD /* UIViewControllerExtension.swift */; };
 		EFACEA6C26E2121B00F946DD /* NotoSerifKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFACEA6B26E2121B00F946DD /* NotoSerifKR-Regular.otf */; };
+		EFBCDFAB2736C24700BC6B7E /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBCDFAA2736C24700BC6B7E /* Tokens.swift */; };
+		EFBCDFB22737FA2400BC6B7E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBCDFB12737FA2400BC6B7E /* LoginViewController.swift */; };
+		EFBCDFB4273803A100BC6B7E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBCDFB3273803A100BC6B7E /* SignUpViewController.swift */; };
+		EFBCDFB6273807CE00BC6B7E /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBCDFB5273807CE00BC6B7E /* UITextFieldExtension.swift */; };
 		EFC03BD326E090A500D1971F /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC03BD226E090A500D1971F /* Auth.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -54,21 +70,37 @@
 		EF2E678A26CB6C7C00E9BF42 /* Color.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Color.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2E678D26CB6C7C00E9BF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF2E678F26CB6C7C00E9BF42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF2E679126CB6C7C00E9BF42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF2E679126CB6C7C00E9BF42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		EF2E679426CB6C7C00E9BF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF2E679626CB6C7F00E9BF42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF2E679926CB6C7F00E9BF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF2E679B26CB6C7F00E9BF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3372B3273146910093648A /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		EF3372B5273149050093648A /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		EF664DD4271836B600DA8885 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		EF6C1430273A8BC100197D8B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		EF6EFBA427281B2800280FAA /* AngryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryViewController.swift; sourceTree = "<group>"; };
+		EF6EFBA627281B3400280FAA /* HappyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyViewController.swift; sourceTree = "<group>"; };
+		EF6EFBA827281B3C00280FAA /* SadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadViewController.swift; sourceTree = "<group>"; };
+		EF6EFBAA27281B5200280FAA /* BoredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredViewController.swift; sourceTree = "<group>"; };
+		EF6EFBAC27281B5A00280FAA /* LoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveViewController.swift; sourceTree = "<group>"; };
+		EF6EFBAE27281B6100280FAA /* ShameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShameViewController.swift; sourceTree = "<group>"; };
 		EF90DC1F26D38B96000D46FA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EF90DC2126D38B9C000D46FA /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		EF90DC2326D38BA4000D46FA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		EF90DC2526D38BBA000D46FA /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		EF90DC2726D391BC000D46FA /* NanumGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.otf; sourceTree = "<group>"; };
 		EFACEA5F26E0A15200F946DD /* Introduction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
+		EFAA2DB7272D0ED300913D85 /* ColorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAPI.swift; sourceTree = "<group>"; };
+		EFACEA5F26E0A15200F946DD /* Introduction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
 		EFACEA6126E0E45000F946DD /* Writing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Writing.storyboard; sourceTree = "<group>"; };
 		EFACEA6426E0E57800F946DD /* WritingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingPageViewController.swift; sourceTree = "<group>"; };
 		EFACEA6726E0E66F00F946DD /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		EFACEA6B26E2121B00F946DD /* NotoSerifKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerifKR-Regular.otf"; sourceTree = "<group>"; };
+		EFBCDFAA2736C24700BC6B7E /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
+		EFBCDFB12737FA2400BC6B7E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EFBCDFB3273803A100BC6B7E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EFBCDFB5273807CE00BC6B7E /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		EFC03BD226E090A500D1971F /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,10 +191,26 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
+		EF6EFBA327281B1400280FAA /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				EF6EFBA427281B2800280FAA /* AngryViewController.swift */,
+				EF6EFBA627281B3400280FAA /* HappyViewController.swift */,
+				EF6EFBA827281B3C00280FAA /* SadViewController.swift */,
+				EF6EFBAA27281B5200280FAA /* BoredViewController.swift */,
+				EF6EFBAC27281B5A00280FAA /* LoveViewController.swift */,
+				EF6EFBAE27281B6100280FAA /* ShameViewController.swift */,
+			);
+			path = Introduction;
+			sourceTree = "<group>";
+		};
 		EF90DC1A26D38B46000D46FA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				EF90DC2526D38BBA000D46FA /* Networking.swift */,
+				EFAA2DB7272D0ED300913D85 /* ColorAPI.swift */,
+				EF3372B3273146910093648A /* Token.swift */,
+				EF3372B5273149050093648A /* KeyChain.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -187,7 +235,9 @@
 		EF90DC1D26D38B5C000D46FA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EFBCDFB72738125F00BC6B7E /* Auth */,
 				EF90DC1F26D38B96000D46FA /* Model.swift */,
+				EFBCDFAA2736C24700BC6B7E /* Tokens.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,6 +270,8 @@
 		EFACEA6326E0E55700F946DD /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				EFBCDFB02737FA0E00BC6B7E /* Auth */,
+				EF6EFBA327281B1400280FAA /* Introduction */,
 				EF2E679126CB6C7C00E9BF42 /* ViewController.swift */,
 				EFACEA6426E0E57800F946DD /* WritingPageViewController.swift */,
 			);
@@ -230,8 +282,27 @@
 			isa = PBXGroup;
 			children = (
 				EFACEA6726E0E66F00F946DD /* UIViewControllerExtension.swift */,
+				EF664DD4271836B600DA8885 /* UIButtonExtension.swift */,
+				EFBCDFB5273807CE00BC6B7E /* UITextFieldExtension.swift */,
+				EF6C1430273A8BC100197D8B /* UIColorExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EFBCDFB02737FA0E00BC6B7E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EFBCDFB12737FA2400BC6B7E /* LoginViewController.swift */,
+				EFBCDFB3273803A100BC6B7E /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		EFBCDFB72738125F00BC6B7E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,8 +431,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				541616C82700882D00860051 /* HeartButton.swift in Sources */,
+				EFBCDFAB2736C24700BC6B7E /* Tokens.swift in Sources */,
+				EF6EFBA927281B3C00280FAA /* SadViewController.swift in Sources */,
 				54185A8126FC894A0016AFAD /* TimelineTableViewCell.swift in Sources */,
 				EF2E679226CB6C7C00E9BF42 /* ViewController.swift in Sources */,
+				EF6EFBAD27281B5A00280FAA /* LoveViewController.swift in Sources */,
+				EFBCDFB4273803A100BC6B7E /* SignUpViewController.swift in Sources */,
+				EF664DD5271836B600DA8885 /* UIButtonExtension.swift in Sources */,
+				EF6EFBA527281B2800280FAA /* AngryViewController.swift in Sources */,
+				EFBCDFB6273807CE00BC6B7E /* UITextFieldExtension.swift in Sources */,
 				EF2E678E26CB6C7C00E9BF42 /* AppDelegate.swift in Sources */,
 				EFACEA6826E0E66F00F946DD /* UIViewControllerExtension.swift in Sources */,
 				EFACEA6526E0E57800F946DD /* WritingPageViewController.swift in Sources */,
@@ -373,6 +451,24 @@
 				EF90DC2026D38B96000D46FA /* Model.swift in Sources */,
 				EF90DC2626D38BBA000D46FA /* Networking.swift in Sources */,
 				549E4860270843D3008C539A /* CommentViewController.swift in Sources */,
+				EFACEA6826E0E66F00F946DD /* UIViewControllerExtension.swift in Sources */,
+				EFACEA6526E0E57800F946DD /* WritingPageViewController.swift in Sources */,
+				EFAA2DB8272D0ED300913D85 /* ColorAPI.swift in Sources */,
+				EF90DC2226D38B9C000D46FA /* View.swift in Sources */,
+				EF2E679026CB6C7C00E9BF42 /* SceneDelegate.swift in Sources */,
+				EF3372B6273149050093648A /* KeyChain.swift in Sources */,
+				54185A8426FC91B20016AFAD /* TimelineViewController.swift in Sources */,
+				5428EBAC270AD634000A3CBC /* MyPageViewController.swift in Sources */,
+				EF90DC2426D38BA4000D46FA /* ViewModel.swift in Sources */,
+				EF90DC2026D38B96000D46FA /* Model.swift in Sources */,
+				EF90DC2626D38BBA000D46FA /* Networking.swift in Sources */,
+				EF6C1431273A8BC100197D8B /* UIColorExtension.swift in Sources */,
+				EF6EFBA727281B3400280FAA /* HappyViewController.swift in Sources */,
+				EF3372B4273146920093648A /* Token.swift in Sources */,
+				EF6EFBAF27281B6100280FAA /* ShameViewController.swift in Sources */,
+				549E4860270843D3008C539A /* CommentViewController.swift in Sources */,
+				EFBCDFB22737FA2400BC6B7E /* LoginViewController.swift in Sources */,
+				EF6EFBAB27281B5200280FAA /* BoredViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +619,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FSLGTDRXYN;
+				DEVELOPMENT_TEAM = APN5U5HZ7G;
 				INFOPLIST_FILE = Color/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -545,6 +642,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FSLGTDRXYN;
+				DEVELOPMENT_TEAM = APN5U5HZ7G;
 				INFOPLIST_FILE = Color/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

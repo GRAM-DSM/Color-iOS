@@ -17,4 +17,15 @@ extension UIButton {
             self.backgroundColor = buttonColor
         }
     }
+<<<<<<< Updated upstream
+=======
+    
+    func makeUnderLine() {
+        let border = CALayer()
+        border.frame = CGRect(x: 0, y: self.frame.size.height-1, width: self.frame.width, height: 1)
+        border.borderWidth = 1
+        border.borderColor = UIColor.gray.cgColor
+        self.layer.addSublayer(border)
+    }
+>>>>>>> Stashed changes
 }
